@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  width: 100%;
+}
+
+footer>* {
+  width: 100%;
+  overflow: hidden;
+}
+
+footer>* {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+footer>* svg {
+  min-width: calc(100% + 300px);
+}
+
+@keyframes left-transition {
+  0% {
+    transform: translateX(0)
+  }
+  25% {
+    transform: translateX(-150px)
+  }
+  75% {
+    transform: translateX(150px)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.foot-l-t {
+  animation: left-transition 30s ease-in-out infinite;
+}
+
+.foot-r-t {
+  animation: left-transition 30s ease-in-out infinite reverse;
+}

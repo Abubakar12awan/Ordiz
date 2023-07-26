@@ -1,0 +1,148 @@
+.container.hh {
+  padding: 80px 16px;
+  width: 100%;
+  font-family: Archia;
+}
+
+.r-cont-home {
+  width: 95%;
+  /* max-width: 630px; */
+  /* padding: 30px 20px; */
+  /* background: #111; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.r-cont-home h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.r-cont-home p {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 720px) {
+  .r-cont-home h1 {
+    font-size: 24px;
+  }
+
+  .r-cont-home p {
+    font-size: 12px;
+  }
+
+  .r-cont-home p.lit {
+    font-size: 11px;
+  }
+}
+
+.r-cont-home .ptt-x {
+  padding-top: 14px;
+}
+
+.r-cont-home .ptt {
+  padding-top: 24px;
+}
+
+.r-cont-home .imp {
+  color: #006dd2;
+}
+
+.btn-hol {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upper-buttons {
+  display: flex;
+  gap: 10px;
+}
+.lower-button {
+  margin-top: 10px;
+}
+
+
+.btn-hol a {
+  display: flex;
+  overflow: hidden;
+  font-family: Archia;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-hol a .l-side {
+  transition: width .5s;
+  /* padding: 12px 10px; */
+  background-color: #00498d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 38px;
+  z-index: 10;
+}
+
+.btn-hol a .l-side:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  right: -16px;
+  border: solid 9px transparent;
+  border-left-color: #00498d;
+  z-index: 1;
+}
+
+.btn-hol a .r-side {
+  transition: width .5s;
+  display: flex;
+  padding: 12px 10px;
+  padding-left: calc(38px + 12px);
+  background-color: #006dd2;
+}
+
+.btn-hol a:hover .l-side {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .r-cont-home .svg-hol svg {
+    width: 100px;
+  }
+
+  .r-cont-home .ptt-x {
+    padding-top: 5px;
+  }
+
+  .r-cont-home .ptt {
+    padding-top: 8px;
+  }
+
+  .btn-hol {
+    padding-top: 4px;
+  }
+}
+
+.last-abs-home {
+  position: absolute;
+  bottom: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  right: 16px;
+  font-family: Archia;
+}
+
+.last-abs-home:hover {
+  text-decoration: underline;
+}

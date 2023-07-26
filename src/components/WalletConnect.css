@@ -1,0 +1,178 @@
+.container {
+	padding: 80px 16px;
+	width: 100%;
+}
+
+.r-cont {
+	width: 95%;
+	max-width: 630px;
+	padding: 30px 20px;
+	/* background: #111; */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	background-image: url("../../public/svg/rect-desk.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: Archia;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+p.nnp {
+	color: #B4B4B4;
+	font-size: 16px;
+}
+
+p.lit {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 720px) {
+	.r-cont {
+		background-image: url("../../public/svg/rect-mob.svg");
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	p.lit {
+		font-size: 11px;
+	}
+
+	p.nnp {
+		font-size: 11px;
+	}
+}
+
+.imp {
+	color: #006DD2;
+}
+
+.ptt {
+	padding-top: 8px;
+}
+
+div.wal-inp {
+	width: 400px;
+	max-width: 400px;
+	background-color: #1D1D1D;
+}
+
+div.wal-inp .inp-cl {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-image: url("../../public/svg/input-border.svg");
+	background-size: 100%;
+	padding: 14px 20px;
+	cursor: pointer;
+}
+
+div.wal-inp .inp-cl .inp-val {
+	opacity: .5;
+	font-size: 20px;
+}
+
+div.wal-inp .inp-cl .inp-val.active {
+	opacity: 1;
+	color: #006DD2;
+}
+
+.inp-icc {
+	display: flex;
+}
+
+div.wal-inp .auto-comp {
+	font-size: 18px;
+	text-align: left;
+	background-image: url("../../public/svg/input-border.svg");
+	background-size: 100%;
+	position: absolute;
+	z-index: 200;
+	background-color: #1D1D1D;
+	top: 100%;
+	left: 0;
+	right: 0;
+	max-height: 30vh;
+	overflow: auto;
+}
+
+div.wal-inp .auto-comp .wal-it {
+	border: 1px solid #2189D8;
+	border-bottom: 0 none;
+	background-color: #1D1D1D;
+	padding: 14px 16px;
+	cursor: pointer;
+}
+
+div.wal-inp .auto-comp .wal-it:last-of-type {
+	border-bottom: 1px solid #2189D8;
+}
+
+div.wal-inp .auto-comp .wal-it:hover {
+	background-color: #2f2f2f;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+	border: 0 none;
+	outline: 0 none;
+	display: flex;
+}
+
+button span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+	color: #585858;
+	font-size: 22px;
+}
+
+button.active span {
+	color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+	div.wal-inp {
+		width: 80%;
+	}
+
+	div.wal-inp .inp-cl {
+		padding: 10px 14px;
+	}
+
+	div.wal-inp .inp-cl .inp-val {
+		font-size: 12px;
+	}
+
+	div.wal-inp .auto-comp {
+		font-size: 11px;
+	}
+}

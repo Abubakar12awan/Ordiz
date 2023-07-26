@@ -1,0 +1,113 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 64px;
+    font-size: 24px;
+    font-family: Archia;
+}
+
+.header-logo {
+    width: 120px;
+}
+
+.header-bar {
+    background-color: #006DD2;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        font-size: 16px;
+    }
+
+    .header-bar {
+        padding: 5px 10px;
+    }
+}
+
+.header-bar a {
+    text-decoration: none;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header-spacer {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header-spacer img {
+    height: 30px;
+    object-fit: contain;
+}
+
+.header-alert {
+    /* background-color: #006DD2; */
+    background-image: url("../../public/svg/top-desk.svg");
+    top: -2px;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
+    margin: auto;
+    padding: 8px 16px;
+    position: relative;
+    gap: 2px;
+    font-family: Montserrat;
+}
+
+@media only screen and (max-width: 720px) {
+    .header-alert {
+        gap: 3px;
+        background-image: url("../../public/svg/top-mob.svg");
+        font-size: 16px;
+        flex-direction: column;
+    }
+
+    .header-spacer img {
+        height: 22px;
+        object-fit: contain;
+    }
+}
+
+a {
+    color: white;
+}
+.header-alert a {
+    color: #006DD2;
+}
+
+.header-bar a.top-docs {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-bar a.top-docs:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 720px) {
+    .header-bar a.top-docs {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+    }    
+}
